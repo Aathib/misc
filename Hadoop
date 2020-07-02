@@ -1,9 +1,0 @@
-start jupyter in putty ---> jupyter notebook --no-browser --port=8889
-
-list all files --> hadoop fs -ls hdfs://xx.xx.xxxx.xx/textmining/input
-
-remove folder --> hadoop fs -rm -r /textmining/input/MCD-TSK/
-
-copy from server to hadoop --> hadoop fs -copyFromLocal -f  /data/LiveInsight/TextMining/output/MCD-MMAI-SP/ /textmining/input/
-
-COUNT NO OF FILES --> hadoop fs -count -q /textmining/input/MCD-UM/* |wc

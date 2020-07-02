@@ -1,0 +1,9 @@
+start jupyter in putty ---> jupyter notebook --no-browser --port=8889
+
+list all files --> hadoop fs -ls hdfs://xx.xx.xxxx.xx/textmining/input
+
+remove folder --> hadoop fs -rm -r /textmining/input/FOLDER_NAME/
+
+copy from server to hadoop --> hadoop fs -copyFromLocal -f  /FOLDER_NAME_SOURCE/ /FOLDER_NAME_DEST/
+
+COUNT NO OF FILES --> hadoop fs -count -q /FODLER_NAME/* |wc
